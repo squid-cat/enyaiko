@@ -1,1 +1,4 @@
 /build
+/src/main/res/font
+src/main/drawablle/*.png
+*.png
