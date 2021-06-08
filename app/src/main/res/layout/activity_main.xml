@@ -36,13 +36,34 @@
             android:gravity="center"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/nyan_font"
-            android:text="今日のえにゃい: 10" />
+            android:text="今日のえにゃい:10" />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
             android:src="@drawable/normal"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:id="@+id/calender_bc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:columnCount="7"
+                app:rowCount="5">
+
+            </androidx.gridlayout.widget.GridLayout>
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </FrameLayout>
+
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
